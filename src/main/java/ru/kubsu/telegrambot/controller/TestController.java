@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping(value = "/{name}", produces = "application/json")
-    public String hello(@PathVariable String name){
+    public String hello(@PathVariable String name) {
         return "Assalamualaikum, " + name + "!\r\n";
     }
 }
